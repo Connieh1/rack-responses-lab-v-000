@@ -1,7 +1,8 @@
 def call(env)
   resp = Rack::Response.new
 
-  time = Time.now
+  time = Time.new
+  t.strftime(""%k:%M")
 
   if time.between?  00:01 & 12:00
     resp.write "Good Morning!"
