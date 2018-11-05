@@ -3,7 +3,7 @@ def call(env)
 
   time = Time.now
 
-  if time.between? 24:00 & 12:00
+  if time.between?  00:01 & 12:00
     resp.write "Good Morning!"
   else
     resp.write "Good Afternoon!"
